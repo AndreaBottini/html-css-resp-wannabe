@@ -66,13 +66,17 @@ img{
   clear:both;
 }
 
-@media screen and (max-width: 480px)
+@media screen and (max-width: 420px)
 {
+  * {
+    box-sizing: border-box;
+  }
 
   body {
     width: 100%;
     margin: auto;
   }
+
   #lezioni .row > .left, #lezioni .row > .right {
     width: 100%;
   }
@@ -80,10 +84,65 @@ img{
   .row {
     width: 100%;
     margin: auto;
-    padding: 10px;
+    padding: 15px;
   }
 
   .left {
+    font-family: fantasy;
+  }
+
+  .left img {
+    background-color: lightblue;
+  }
+
+  .right {
+    font-family: fantasy;
+  }
+
+  .central {
+    font-family: fantasy;
+  }
+
+  .right img {
+    background-color: lightblue;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    width:100%;
+  }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    width: 100%;
+  }
+
+  .container.grey {
+    background-color: lightgrey;
+  }
+
+  #steps h1 {
+    text-align: right;
+  }
+
+  #steps h3 {
+    text-align: left;
+  }
+
+  #why h1 {
+    text-align: right;
+    text-transform: capitalize;
+    font-size: 25px;
+  }
+
+  #why h3 {
+    text-align: center;
+  }
+
+  .first,.second,.third {
+    font-size: 23px;
     font-family: fantasy;
   }
 
@@ -93,6 +152,21 @@ img{
     background-color: lightblue;
     font-style: oblique;
     text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  h3 {
+    font-size: 15px;
+    text-align: left;
+    background-color: lightblue;
+    font-style: oblique;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  hr {
+    border: 5px dotted white;
+    margin-top: 50px;
   }
 
 }
