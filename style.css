@@ -65,3 +65,34 @@ img{
 .clear {
   clear:both;
 }
+
+@media screen and (max-width: 480px)
+{
+
+  body {
+    width: 100%;
+    margin: auto;
+  }
+  #lezioni .row > .left, #lezioni .row > .right {
+    width: 100%;
+  }
+
+  .row {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .left {
+    font-family: fantasy;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: left;
+    background-color: lightblue;
+    font-style: oblique;
+    text-transform: uppercase;
+  }
+
+}
